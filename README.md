@@ -166,5 +166,3 @@ These are only placeholders for later learning.
 This project is part of my backend engineering learning roadmap.
 
 Git commands were practiced step by step.
-
-This line will be reverted for Git practice.

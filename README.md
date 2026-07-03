@@ -163,3 +163,4 @@ These are only placeholders for later learning.
 - Add authentication
 - Add Postman collection
 
+This project is part of my backend engineering learning roadmap.

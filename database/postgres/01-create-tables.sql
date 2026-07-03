@@ -1,0 +1,21 @@
+CREATE TABLE students (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) NOT NULL UNIQUE,
+  course VARCHAR(100) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE tasks (
+  id SERIAL PRIMARY KEY,
+  student_id INTEGER NOT NULL,
+  title VARCHAR(150) NOT NULL,
+  status VARCHAR(30) DEFAULT 'Pending',
+  due_date DATE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_student
+    FOREIGN KEY (student_id)
+    REFERENCES students(id)
+    ON DELETE CASCADE
+);
+

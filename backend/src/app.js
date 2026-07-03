@@ -1,0 +1,20 @@
+const express = require('express');
+const cors = require('cors');
+const studentRoutes = require('./routes/studentRoutes');
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'Student Task Manager backend is running'
+  });
+});
+
+app.use('/students', studentRoutes);
+
+module.exports = app;
+

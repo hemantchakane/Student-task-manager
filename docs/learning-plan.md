@@ -55,3 +55,14 @@ Work completed:
 - Added simple aggregation examples
 
 Git rebase was practiced using a feature branch.
+
+## TypeScript Practice
+
+Topic: Basic TypeScript
+
+Work completed:
+- Created `frontend/src/typescript.ts`
+- Added `Student` and `Task` types
+- Added typed dummy data
+- Added a typed dashboard helper function
+- Imported TypeScript data into the React app

@@ -8,8 +8,20 @@ This folder contains the React and Vite frontend.
 - Dashboard summary
 - Student list using dummy data
 - Task list using dummy data
+- TypeScript practice file for typed student and task data
 
 The frontend does not call the backend yet. This is intentional for the Monday to Wednesday learning stage.
+
+## TypeScript Practice
+
+The file `src/typescript.ts` contains:
+
+- `Student` type
+- `Task` type
+- typed dummy data
+- `getDashboardCounts()` helper function
+
+`App.jsx` imports this TypeScript file and uses its data in the UI.
 
 ## Run Frontend
 
@@ -30,4 +42,3 @@ http://localhost:5173
 - Add student form
 - Add task form
 - Add loading and error states
-

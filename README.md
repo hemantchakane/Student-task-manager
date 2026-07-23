@@ -10,6 +10,7 @@ The goal of this repository is not to build a production application. The goal i
 - React
 - Vite
 - Tailwind CSS
+- TypeScript practice
 
 ### Backend
 - Node.js
@@ -42,6 +43,7 @@ Frontend:
 - Dashboard
 - Student List with dummy data
 - Task List with dummy data
+- TypeScript practice file for typed student and task data
 
 Backend:
 - Express server
@@ -87,11 +89,23 @@ Added MongoDB learning examples for:
 
 The planned MongoDB collection is `activity_logs`.
 
+### TypeScript Practice
+
+Added `frontend/src/typescript.ts` to practice:
+- `type` definitions
+- typed arrays
+- typed helper functions
+
+The main app still uses React components written in JavaScript, but imports student and task data from the TypeScript file.
+
+This means the UI still looks the same, but the project now demonstrates basic TypeScript usage in a real part of the frontend data flow.
+
 ## Folder Structure
 
 ```text
 student-task-manager/
   frontend/
+    src/typescript.ts
   backend/
   database/
     postgres/
@@ -150,6 +164,7 @@ This project is intentionally split into small learning stages. Good commit exam
 - `add student controller`
 - `add postgres create table scripts`
 - `add mongodb activity log examples`
+- `add typescript practice file`
 
 ## Future Improvements
 
